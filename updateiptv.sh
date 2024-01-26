@@ -18,7 +18,7 @@ cat  /root/ipiptv/CNTV.m3u >>/root/ipiptv/IPTV.m3u
 rm -rf /root/ipiptv/CNTV.m3u /root/ipiptv/CCTV.m3u
 
 current_time=$(date +"%Y-%m-%d %H:%M:%S")
-echo $current_time >> /root/ipiptv/README.md
+echo $current_time >> /root/ipiptv/updatelog.txt
 
 #提交
 git add -A  && git commit -a -m 'git commit '  && git push origin main
